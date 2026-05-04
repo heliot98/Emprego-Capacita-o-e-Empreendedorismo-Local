@@ -1,4 +1,3 @@
-# Emprego-Capacita-o-e-Empreendedorismo-Local
 # Backend: Portal de Emprego e Capacitação
 
 ## Descrição do Projeto
