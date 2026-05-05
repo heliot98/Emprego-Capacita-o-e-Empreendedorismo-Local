@@ -24,4 +24,5 @@ Resolver a dificuldade de centralizar vagas de emprego e trilhas de aprendizado 
 - `GET /cursos`: Lista cursos de capacitação.
 
 ## Integrantes
-- Daniel Duarte(01847432)
+- Daniel Duarte (01847432)
+- Erik Menezes (01848032)
