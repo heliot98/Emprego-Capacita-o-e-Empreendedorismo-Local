@@ -26,3 +26,7 @@ Resolver a dificuldade de centralizar vagas de emprego e trilhas de aprendizado 
 ## Integrantes
 - Daniel Duarte (01847432)
 - Erik Menezes (01848032)
+- Hélio Tarquino (01548379)
+- Kilderys Kallayb (01274330)
+- Wesley gonçalves (01849581)
+- Thales Tadeu (01857106)
