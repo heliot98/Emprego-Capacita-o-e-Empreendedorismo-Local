@@ -118,7 +118,7 @@ erDiagram
         datetime DataEnvio
         boolean StatusLeitura
     }
-
+ ```
 ## Integrantes
 - Daniel Duarte (01847432)
 - Erik Menezes (01848032)
