@@ -1,5 +1,6 @@
 package com.portal.emprego.service;
 
+import com.portal.emprego.exception.ResourceNotFoundException;//importando exception
 import com.portal.emprego.model.Vaga;
 import com.portal.emprego.repository.VagaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +18,11 @@ public class VagaService {
         return vagaRepository.findAll();
     }
 
-    public Optional<Vaga> buscarPorId(Long id) {
-        return vagaRepository.findById(id);
+    public Vaga buscarPorId(Long id) {
+        return vagaRepository.findById(id)
+            .orElseThrow(() -> new ResourceNotFoundException("Vaga com o ID " + id + " não foi encontrada."));
     }
+
 
     public Vaga salvar(Vaga vaga) {
         // Aqui você pode colocar validações no futuro (ex: validar se a empresa existe)
