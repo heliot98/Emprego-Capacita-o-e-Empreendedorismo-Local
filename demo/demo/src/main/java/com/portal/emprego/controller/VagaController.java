@@ -22,12 +22,11 @@ public class VagaController {
         return vagaService.listarTodas();
     }
 
-    // Rota para buscar uma vaga específica (GET /vagas/{id})
+    // ALTERADO: Agora busca a vaga direto. Se não existir, a exception cuida do erro!
     @GetMapping("/{id}")
     public ResponseEntity<Vaga> buscar(@PathVariable Long id) {
-        return vagaService.buscarPorId(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Vaga vaga = vagaService.buscarPorId(id);
+        return ResponseEntity.ok(vaga);
     }
 
     // Rota para cadastrar uma nova vaga (POST /vagas)
